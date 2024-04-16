@@ -90,7 +90,6 @@ There are two scripts to interact with controller manager from launch files:
 
     $ ros2 run controller_manager spawner -h
     usage: spawner [-h] [-c CONTROLLER_MANAGER] [-p PARAM_FILE] [--load-only] [--stopped] [-t CONTROLLER_TYPE] [-u]
-                      [--controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT]
                       controller_name
 
     positional arguments:
@@ -107,8 +106,6 @@ There are two scripts to interact with controller manager from launch files:
       -t CONTROLLER_TYPE, --controller-type CONTROLLER_TYPE
                             If not provided it should exist in the controller manager namespace
       -u, --unload-on-kill  Wait until this application is interrupted and unload controller
-      --controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT
-                            Time to wait for the controller manager
 
 
 ``unspawner``
